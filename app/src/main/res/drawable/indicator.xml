@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true">
+
+        <shape
+            android:shape="ring"
+            android:innerRadius="4dp"
+            android:thickness="4dp"
+            android:useLevel="false">
+            <solid android:color="@color/teal_200"/>
+        </shape>
+
+    </item>
+
+    <item>
+
+        <shape
+            android:shape="ring"
+            android:innerRadius="2dp"
+            android:thickness="3dp"
+            android:useLevel="false">
+            <solid android:color="@color/profile_20"/>
+        </shape>
+
+    </item>
+
+
+</selector>
