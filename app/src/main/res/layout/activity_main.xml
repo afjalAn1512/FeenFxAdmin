@@ -432,7 +432,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:contentDescription="@string/todo"
-                        android:src="@drawable/wallet" />
+                        android:src="@drawable/payment__1_" />
 
                     <TextView
                         android:id="@+id/textVf6diew4"
@@ -452,7 +452,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="4dp"
-                    android:text="Payment"
+                    android:text="@string/payment_request"
                     android:textColor="@color/textColor"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -464,6 +464,7 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -517,10 +518,10 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="@string/_00"
-                        android:visibility="invisible"
                         android:textColor="@color/textColor"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
                 </LinearLayout>
 
                 <TextView
@@ -567,7 +568,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:contentDescription="@string/todo"
-                        android:src="@drawable/wallet" />
+                        android:src="@drawable/payment_method" />
 
                     <TextView
                         android:id="@+id/texgtVf6dew4"
@@ -576,10 +577,10 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="@string/_00"
-                        android:visibility="invisible"
                         android:textColor="@color/textColor"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
                 </LinearLayout>
 
                 <TextView
@@ -588,6 +589,142 @@
                     android:layout_height="wrap_content"
                     android:padding="4dp"
                     android:text="Add Payment"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/add_timeSlot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/imagdf6eViw4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/timer" />
+
+                    <TextView
+                        android:id="@+id/texgtVf6diew"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/_00"
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/texdgt6ew3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Add Slot"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/add_Trading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/imaf6ew4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/anaylitcs"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/texgtVf6de"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/_00"
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/texdgtVi6w"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Trade"
                     android:textColor="@color/textColor"
                     android:textSize="16sp"
                     android:textStyle="bold" />

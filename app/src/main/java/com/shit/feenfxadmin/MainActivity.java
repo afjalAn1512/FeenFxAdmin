@@ -2,8 +2,11 @@ package com.shit.feenfxadmin;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -18,6 +21,7 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
 
     private TextView userName, name,userCount;
+    private CardView add_timeSlot,add_Trading;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         userName = findViewById(R.id.textView2);
         name = findViewById(R.id.textView7);
         userCount = findViewById(R.id.textView4);
+        add_timeSlot = findViewById(R.id.add_timeSlot);
+        add_Trading = findViewById(R.id.add_Trading);
 
 
         FirebaseFirestore.getInstance().collection("userDetails").whereEqualTo("user_id", FirebaseAuth.getInstance().getUid())
@@ -53,6 +59,15 @@ public class MainActivity extends AppCompatActivity {
                         userCount.setText(String.valueOf(count));
                     }
                 });
+
+
+        add_timeSlot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,TimeSlotActivity.class));
+                finish();
+            }
+        });
 
     }
 }

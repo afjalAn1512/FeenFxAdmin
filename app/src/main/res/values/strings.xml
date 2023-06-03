@@ -29,4 +29,5 @@
     <string name="deposit_list">Deposit List</string>
     <string name="user_list">User List</string>
     <string name="manage_members">Manage Members</string>
+    <string name="payment_request">Payment Request</string>
 </resources>
