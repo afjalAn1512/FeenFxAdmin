@@ -1,6 +1,7 @@
 package com.shit.feenfxadmin.spalsh;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -22,7 +23,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.shit.feenfxadmin.MainActivity;
 import com.shit.feenfxadmin.R;
 
@@ -95,21 +100,25 @@ public class LogInActivity extends AppCompatActivity {
                                         popup.show();
                                         popup.setCancelable(false);
 
-                                        FirebaseFirestore.getInstance().collection("userDetails")
-                                                .document(Objects.requireNonNull(mAuth.getCurrentUser()).getUid())
-                                                .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                        FirebaseFirestore.getInstance().collection("Admin")
+                                                .whereEqualTo("id","admin")
+                                                .addSnapshotListener(new EventListener<QuerySnapshot>() {
                                                     @Override
-                                                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-                                                        if (documentSnapshot.exists()){
+                                                    public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+                                                        for(QueryDocumentSnapshot documentSnapshot : Objects.requireNonNull(value)){
 
-                                                            Intent intent = new Intent(LogInActivity.this, MainActivity.class);
-                                                            startActivity(intent);
-                                                            finish();
-                                                            popup.dismiss();
+                                                            if (documentSnapshot.exists()){
 
-                                                        }else {
-                                                            popup.dismiss();
-                                                            Toast.makeText(LogInActivity.this, "User doesn't exist", Toast.LENGTH_SHORT).show();
+                                                                Intent intent = new Intent(LogInActivity.this, MainActivity.class);
+                                                                startActivity(intent);
+                                                                finish();
+                                                                popup.dismiss();
+
+                                                            }else {
+                                                                popup.dismiss();
+                                                                Toast.makeText(LogInActivity.this, "User doesn't exist", Toast.LENGTH_SHORT).show();
+                                                            }
+
                                                         }
                                                     }
                                                 });

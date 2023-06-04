@@ -7,6 +7,805 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/user"
+                                android:contentDescription="@string/todo" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/_00"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="@string/manage_members"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/createPackage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imageVi4ew4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/resource_package"
+                                android:contentDescription="@string/todo" />
+
+                            <TextView
+                                android:id="@+id/te4xtView4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/_00"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textyView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Report"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/deposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imag6eView4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/bank"
+                                android:contentDescription="@string/todo" />
+
+                            <TextView
+                                android:id="@+id/textV6iew4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/_00"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textVi6ew3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="@string/deposit"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/withdraw"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imageeVi4ew4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/withdraw_money"
+                                android:contentDescription="@string/todo" />
+
+                            <TextView
+                                android:id="@+id/te4xetView4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/_00"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textytView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="@string/withdraw"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imagd6eView4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/transfer" />
+
+                            <TextView
+                                android:id="@+id/textV6diew4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/_00"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/texdtVi6ew3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="@string/transfer"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imagd6geView4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/payment__1_" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView100"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/_00"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textVf6diew40"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/_00"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/texdtgfhVi6ew3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="@string/payment_request"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/add_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imagdf6eView4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/wallet" />
+
+                            <TextView
+                                android:id="@+id/texgtVf6diew4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/_00"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/texdgtVi6ew3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Add Wallet Address"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/add_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imaf6eView4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/payment_method" />
+
+                            <TextView
+                                android:id="@+id/texgtVf6dew4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/_00"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/texdgtVi6w3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Add Payment"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/add_timeSlot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imagdf6eViw4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/timer" />
+
+                            <TextView
+                                android:id="@+id/texgtVf6diew"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/_00"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/texdgt6ew3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Add Slot"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/add_Trading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imaf6ew4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/anaylitcs"
+                                app:tint="@color/black" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/_00"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textVf6diew4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/_00"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/texdgtVi6w"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Trade"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/log_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/imagdf6iw4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/log_out" />
+
+                            <TextView
+                                android:id="@+id/texgtVdiew"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/_00"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/texdgt6e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="@string/log_out"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="40dp"
@@ -65,673 +864,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.0" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.0">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/user_list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="16dp"
-            android:layout_weight="1"
-            android:elevation="10dp"
-
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/user"
-                        android:contentDescription="@string/todo" />
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_00"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="@string/manage_members"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/createPackage"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_weight="1"
-            android:elevation="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:id="@+id/imageVi4ew4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/resource_package"
-                        android:contentDescription="@string/todo" />
-
-                    <TextView
-                        android:id="@+id/te4xtView4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_00"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textyView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="Report"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.0">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/deposit"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="16dp"
-            android:layout_weight="1"
-            android:elevation="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:id="@+id/imag6eView4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/bank"
-                        android:contentDescription="@string/todo" />
-
-                    <TextView
-                        android:id="@+id/textV6iew4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_00"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textVi6ew3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="@string/deposit"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_weight="1"
-            android:elevation="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:id="@+id/imageeVi4ew4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/withdraw_money"
-                        android:contentDescription="@string/todo" />
-
-                    <TextView
-                        android:id="@+id/te4xetView4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_00"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textytView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="@string/withdraw"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.0">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="16dp"
-            android:layout_weight="1"
-            android:elevation="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:id="@+id/imagd6eView4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/transfer" />
-
-                    <TextView
-                        android:id="@+id/textV6diew4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_00"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/texdtVi6ew3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="@string/transfer"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/payment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_weight="1"
-            android:elevation="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:id="@+id/imagd6geView4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/payment__1_" />
-
-                    <TextView
-                        android:id="@+id/textVf6diew4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_00"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:visibility="invisible" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/texdtgfhVi6ew3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="@string/payment_request"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="0.0">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/add_wallet"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="16dp"
-            android:layout_weight="1"
-            android:elevation="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:id="@+id/imagdf6eView4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/wallet" />
-
-                    <TextView
-                        android:id="@+id/texgtVf6diew4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_00"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:visibility="invisible" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/texdgtVi6ew3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="Add Wallet Address"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/add_payment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:elevation="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:id="@+id/imaf6eView4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/payment_method" />
-
-                    <TextView
-                        android:id="@+id/texgtVf6dew4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_00"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:visibility="invisible" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/texdgtVi6w3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="Add Payment"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.0">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/add_timeSlot"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="16dp"
-            android:layout_weight="1"
-            android:elevation="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:id="@+id/imagdf6eViw4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/timer" />
-
-                    <TextView
-                        android:id="@+id/texgtVf6diew"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_00"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:visibility="invisible" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/texdgt6ew3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="Add Slot"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/add_Trading"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:elevation="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:id="@+id/imaf6ew4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/anaylitcs"
-                        app:tint="@color/black" />
-
-                    <TextView
-                        android:id="@+id/texgtVf6de"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_00"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:visibility="invisible" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/texdgtVi6w"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="Trade"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
